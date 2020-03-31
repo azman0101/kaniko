@@ -23,9 +23,9 @@ VERSION_PACKAGE = $(REPOPATH/pkg/version)
 SHELL := /bin/bash
 GOOS ?= $(shell go env GOOS)
 GOARCH ?= $(shell go env GOARCH)
-ORG := github.com/GoogleContainerTools
+ORG := github.com/azman0101
 PROJECT := kaniko
-REGISTRY?=gcr.io/kaniko-project
+REGISTRY?=azman0101
 
 REPOPATH ?= $(ORG)/$(PROJECT)
 VERSION_PACKAGE = $(REPOPATH)/pkg/version

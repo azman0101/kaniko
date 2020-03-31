@@ -27,6 +27,7 @@ jobs:
         - make travis-setup
         - make minikube-setup
       script:
+        - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
         - make images
         - make push
         - make integration-test-k8s
